@@ -1,0 +1,6 @@
+c:\users\james.fleming\documents\visual studio 2013\Projects\PatternsTutorial\PatternsTutorial\bin\Debug\PatternsTutorial.exe.config
+C:\Users\James.Fleming\Documents\Visual Studio 2013\Projects\PatternsTutorial\PatternsTutorial\bin\Debug\PatternsTutorial.exe
+C:\Users\James.Fleming\Documents\Visual Studio 2013\Projects\PatternsTutorial\PatternsTutorial\bin\Debug\PatternsTutorial.pdb
+C:\Users\James.Fleming\Documents\Visual Studio 2013\Projects\PatternsTutorial\PatternsTutorial\obj\Debug\PatternsTutorial.csprojResolveAssemblyReference.cache
+C:\Users\James.Fleming\Documents\Visual Studio 2013\Projects\PatternsTutorial\PatternsTutorial\obj\Debug\PatternsTutorial.exe
+C:\Users\James.Fleming\Documents\Visual Studio 2013\Projects\PatternsTutorial\PatternsTutorial\obj\Debug\PatternsTutorial.pdb

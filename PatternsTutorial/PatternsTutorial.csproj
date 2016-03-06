@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD4CE368-883A-4078-A14C-3A6957D78BC8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PatternsTutorial</RootNamespace>
+    <AssemblyName>PatternsTutorial</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behavioral\Adapter\Example\EmployeeAdapter.cs" />
+    <Compile Include="Behavioral\Adapter\Example\HRSystem.cs" />
+    <Compile Include="Behavioral\Adapter\Example\ITargetEmployeeSource.cs" />
+    <Compile Include="Behavioral\Adapter\Example\ThirdPartyBillingSystem.cs" />
+    <Compile Include="Behavioral\Adapter\Invoke.cs" />
+    <Compile Include="Behavioral\Adapter\Pattern\Adaptee.cs" />
+    <Compile Include="Behavioral\Adapter\Pattern\Adaptor.cs" />
+    <Compile Include="Behavioral\Adapter\Pattern\ITarget.cs" />
+    <Compile Include="Behavioral\Adapter\Pattern\Target.cs" />
+    <Compile Include="Behavioral\Bridge\Example\IBridgeMethods.cs" />
+    <Compile Include="Behavioral\Bridge\Example\LaserPrinter.cs" />
+    <Compile Include="Behavioral\Bridge\Example\OrganPrinter.cs" />
+    <Compile Include="Behavioral\Bridge\Example\Printer.cs" />
+    <Compile Include="Behavioral\Bridge\Example\ThreeDPrinter.cs" />
+    <Compile Include="Behavioral\Bridge\Example\TwoDPrinter.cs" />
+    <Compile Include="Behavioral\Bridge\Invoke.cs" />
+    <Compile Include="Behavioral\Bridge\Pattern\Abstraction.cs" />
+    <Compile Include="Behavioral\Bridge\Pattern\ConcreteImplementorA.cs" />
+    <Compile Include="Behavioral\Bridge\Pattern\ConcreteImplementorB.cs" />
+    <Compile Include="Behavioral\Bridge\Pattern\Implementor.cs" />
+    <Compile Include="Behavioral\Bridge\Pattern\RefinedAbstraction.cs" />
+    <Compile Include="Behavioral\Composite\Example\Campaign.cs" />
+    <Compile Include="Behavioral\Composite\Example\Person.cs" />
+    <Compile Include="Behavioral\Composite\Example\PoliticalParty.cs" />
+    <Compile Include="Behavioral\Composite\Example\Election.cs" />
+    <Compile Include="Behavioral\Composite\Example\PresidentialCampaign.cs" />
+    <Compile Include="Behavioral\Composite\Example\Supporter.cs" />
+    <Compile Include="Behavioral\Composite\Invoke.cs" />
+    <Compile Include="Behavioral\Composite\Pattern\Abstraction.cs" />
+    <Compile Include="Behavioral\Composite\Pattern\ConcreteImplementorA.cs" />
+    <Compile Include="Behavioral\Composite\Pattern\ConcreteImplementorB.cs" />
+    <Compile Include="Behavioral\Composite\Pattern\Implementor.cs" />
+    <Compile Include="Behavioral\Composite\Pattern\RefinedAbstraction.cs" />
+    <Compile Include="Behavioral\Decorator\Example\Ability.cs" />
+    <Compile Include="Behavioral\Decorator\Example\Mutant.cs" />
+    <Compile Include="Behavioral\Decorator\Example\Durability.cs" />
+    <Compile Include="Behavioral\Decorator\Example\Senses.cs" />
+    <Compile Include="Behavioral\Decorator\Example\Agility.cs" />
+    <Compile Include="Behavioral\Decorator\Example\Superpower.cs" />
+    <Compile Include="Behavioral\Decorator\Invoke.cs" />
+    <Compile Include="Behavioral\Decorator\Pattern\Component.cs" />
+    <Compile Include="Behavioral\Decorator\Pattern\ConcreteComponent.cs" />
+    <Compile Include="Behavioral\Decorator\Pattern\ConcreteDecoratorA.cs" />
+    <Compile Include="Behavioral\Decorator\Pattern\ConcreteDecoratorB.cs" />
+    <Compile Include="Behavioral\Decorator\Pattern\Decorator.cs" />
+    <Compile Include="Behavioral\Facade\Example\Facade.cs" />
+    <Compile Include="Behavioral\Facade\Example\User.cs" />
+    <Compile Include="Behavioral\Facade\Example\CreditCard.cs" />
+    <Compile Include="Behavioral\Facade\Invoke.cs" />
+    <Compile Include="Behavioral\Facade\Pattern\Facade.cs" />
+    <Compile Include="Behavioral\Facade\Pattern\SubSystem1.cs" />
+    <Compile Include="Behavioral\Facade\Pattern\SubSystem2.cs" />
+    <Compile Include="Behavioral\Flyweight\Example\IShape.cs" />
+    <Compile Include="Behavioral\Flyweight\Example\Rectangle.cs" />
+    <Compile Include="Behavioral\Flyweight\Example\ShapeObjectFactory.cs" />
+    <Compile Include="Behavioral\Flyweight\Invoke.cs" />
+    <Compile Include="Behavioral\Flyweight\Pattern\ConcreteFlyweight.cs" />
+    <Compile Include="Behavioral\Flyweight\Pattern\Flyweight.cs" />
+    <Compile Include="Behavioral\Flyweight\Pattern\FlyweightFactory.cs" />
+    <Compile Include="Behavioral\Flyweight\Pattern\UnsharedConcreteFlyweight.cs" />
+    <Compile Include="Behavioral\Invoker.cs" />
+    <Compile Include="Behavioral\Proxy\Example\Car.cs" />
+    <Compile Include="Behavioral\Proxy\Example\Driver.cs" />
+    <Compile Include="Behavioral\Proxy\Example\ICar.cs" />
+    <Compile Include="Behavioral\Proxy\Example\ProxyCar.cs" />
+    <Compile Include="Behavioral\Proxy\Invoke.cs" />
+    <Compile Include="Behavioral\Proxy\Pattern\Proxy.cs" />
+    <Compile Include="Behavioral\Proxy\Pattern\RealSubject.cs" />
+    <Compile Include="Behavioral\Proxy\Pattern\Subject.cs" />
+    <Compile Include="Creational\AbstractFactory\Pattern\AbstractProductA.cs" />
+    <Compile Include="Creational\AbstractFactory\Pattern\AbstractFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Pattern\AbstractProductB.cs" />
+    <Compile Include="Creational\AbstractFactory\Pattern\Client.cs" />
+    <Compile Include="Creational\AbstractFactory\Pattern\ConcreteFactory2.cs" />
+    <Compile Include="Creational\AbstractFactory\Pattern\ConcreteFactory1.cs" />
+    <Compile Include="Creational\AbstractFactory\Pattern\ProductA1.cs" />
+    <Compile Include="Creational\AbstractFactory\Pattern\ProductA2.cs" />
+    <Compile Include="Creational\AbstractFactory\Pattern\ProductB1.cs" />
+    <Compile Include="Creational\AbstractFactory\Pattern\ProductB2.cs" />
+    <Compile Include="Creational\AbstractFactory\Example\FrenchLanguageFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Invoke.cs" />
+    <Compile Include="Creational\AbstractFactory\Example\LanguageFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Example\Translation.cs" />
+    <Compile Include="Creational\AbstractFactory\Example\Language.cs" />
+    <Compile Include="Creational\AbstractFactory\Example\Client.cs" />
+    <Compile Include="Creational\AbstractFactory\Example\SpanishLanguageDictionary.cs" />
+    <Compile Include="Creational\AbstractFactory\Example\FrenchLanguageDictionary.cs" />
+    <Compile Include="Creational\AbstractFactory\Example\French.cs" />
+    <Compile Include="Creational\AbstractFactory\Example\Spanish.cs" />
+    <Compile Include="Creational\AbstractFactory\Example\SpanishLanguageFactory.cs" />
+    <Compile Include="Creational\Builder\Example\Bartender.cs" />
+    <Compile Include="Creational\Builder\Example\BloodyMariaBuilder.cs" />
+    <Compile Include="Creational\Builder\Example\BloodyMaryBuilder.cs" />
+    <Compile Include="Creational\Builder\Example\CocktailBuilder.cs" />
+    <Compile Include="Creational\Builder\Example\Cocktail.cs" />
+    <Compile Include="Creational\Builder\Example\Ingredient.cs" />
+    <Compile Include="Creational\Builder\Pattern\Builder.cs" />
+    <Compile Include="Creational\Builder\Invoke.cs" />
+    <Compile Include="Creational\Builder\Pattern\ConcreteBuilder.cs" />
+    <Compile Include="Creational\Builder\Pattern\Director.cs" />
+    <Compile Include="Creational\Builder\Pattern\Product.cs" />
+    <Compile Include="Creational\FactoryMethod\Expanded\NeapolitanStylePizzaMaker.cs" />
+    <Compile Include="Creational\FactoryMethod\Invoke.cs" />
+    <Compile Include="Creational\FactoryMethod\Expanded\ChicagoStylePizza.cs" />
+    <Compile Include="Creational\FactoryMethod\Expanded\ChicagoStylePizzaMaker.cs" />
+    <Compile Include="Creational\FactoryMethod\Expanded\NeapolitanStylePizza.cs" />
+    <Compile Include="Creational\FactoryMethod\Expanded\PizzaMaker.cs" />
+    <Compile Include="Creational\FactoryMethod\Example\IPizza.cs" />
+    <Compile Include="Creational\FactoryMethod\Expanded\IPizza.cs" />
+    <Compile Include="Creational\FactoryMethod\Pattern\ConcreteCreator.cs" />
+    <Compile Include="Creational\FactoryMethod\Pattern\ConcreteProduct.cs" />
+    <Compile Include="Creational\FactoryMethod\Pattern\Creator.cs" />
+    <Compile Include="Creational\FactoryMethod\Pattern\IProduct.cs" />
+    <Compile Include="Creational\FactoryMethod\Example\Pizza.cs" />
+    <Compile Include="Creational\FactoryMethod\Example\PizzaShop.cs" />
+    <Compile Include="Creational\FactoryMethod\Example\Pizzeria.cs" />
+    <Compile Include="Creational\Invoker.cs" />
+    <Compile Include="Creational\Prototype\Example\Mutant.cs" />
+    <Compile Include="Creational\Prototype\Example\IMutant.cs" />
+    <Compile Include="Creational\Prototype\Example\Mutation.cs" />
+    <Compile Include="Creational\Prototype\Example\Power.cs" />
+    <Compile Include="Creational\Prototype\Invoke.cs" />
+    <Compile Include="Creational\Prototype\Pattern\ConcretePrototypeB.cs" />
+    <Compile Include="Creational\Prototype\Pattern\ConcretePrototypeA.cs" />
+    <Compile Include="Creational\Prototype\Pattern\Prototype.cs" />
+    <Compile Include="Creational\Singleton\Example\Framework.cs" />
+    <Compile Include="Creational\Singleton\Example\DoubleCheckedLockingVolatile.cs" />
+    <Compile Include="Creational\Singleton\Example\DoubleCheckedLockingUnsafe.cs" />
+    <Compile Include="Creational\Singleton\Example\Mutex.cs" />
+    <Compile Include="Creational\Singleton\Example\ThreadSafe.cs" />
+    <Compile Include="Creational\Singleton\Invoke.cs" />
+    <Compile Include="Creational\Singleton\Pattern\Singleton.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\ChainOfResponsibility\Example\Zeus.cs" />
+    <Compile Include="Structural\ChainOfResponsibility\Example\Threat.cs" />
+    <Compile Include="Structural\ChainOfResponsibility\Example\Protagonist.cs" />
+    <Compile Include="Structural\ChainOfResponsibility\Example\Threatlevel.cs" />
+    <Compile Include="Structural\ChainOfResponsibility\Example\King.cs" />
+    <Compile Include="Structural\ChainOfResponsibility\Example\WickedWitch.cs" />
+    <Compile Include="Structural\ChainOfResponsibility\Invoker.cs" />
+    <Compile Include="Structural\ChainOfResponsibility\Pattern\ConcreteHandle2.cs" />
+    <Compile Include="Structural\ChainOfResponsibility\Pattern\ConcreteHandler1.cs" />
+    <Compile Include="Structural\ChainOfResponsibility\Pattern\ConcreteHandler3.cs" />
+    <Compile Include="Structural\ChainOfResponsibility\Pattern\Handler.cs" />
+    <Compile Include="Structural\Command\Example\CloseSwitchCommand.cs" />
+    <Compile Include="Structural\Command\Example\ICommand.cs" />
+    <Compile Include="Structural\Command\Example\ISwitchable.cs" />
+    <Compile Include="Structural\Command\Example\Light.cs" />
+    <Compile Include="Structural\Command\Example\OpenSwitchCommand.cs" />
+    <Compile Include="Structural\Command\Example\Switch.cs" />
+    <Compile Include="Structural\Command\Invoke.cs" />
+    <Compile Include="Structural\Command\Pattern\Command.cs" />
+    <Compile Include="Structural\Command\Pattern\ConcreteCommand.cs" />
+    <Compile Include="Structural\Command\Pattern\Invoker.cs" />
+    <Compile Include="Structural\Command\Pattern\Receiver.cs" />
+    <Compile Include="Structural\Interpreter\Invoke.cs" />
+    <Compile Include="Structural\Interpreter\Pattern\AbstractExpression.cs" />
+    <Compile Include="Structural\Interpreter\Pattern\Context.cs" />
+    <Compile Include="Structural\Interpreter\Pattern\NonterminalExpression.cs" />
+    <Compile Include="Structural\Interpreter\Pattern\TerminalExpression.cs" />
+    <Compile Include="Structural\Invoker.cs" />
+    <Compile Include="Structural\Iterator\Invoke.cs" />
+    <Compile Include="Structural\Iterator\Pattern\Aggregate.cs" />
+    <Compile Include="Structural\Iterator\Pattern\ConcreteAggregate.cs" />
+    <Compile Include="Structural\Iterator\Pattern\ConcreteIterator.cs" />
+    <Compile Include="Structural\Iterator\Pattern\Iterator.cs" />
+    <Compile Include="Structural\Mediator\Invoke.cs" />
+    <Compile Include="Structural\Mediator\Pattern\Colleague.cs" />
+    <Compile Include="Structural\Mediator\Pattern\ConcreteColleague1.cs" />
+    <Compile Include="Structural\Mediator\Pattern\ConcreteColleague2.cs" />
+    <Compile Include="Structural\Mediator\Pattern\ConcreteMediator.cs" />
+    <Compile Include="Structural\Mediator\Pattern\Mediator.cs" />
+    <Compile Include="Structural\Memento\Invoke.cs" />
+    <Compile Include="Structural\Memento\Pattern\Caretaker.cs" />
+    <Compile Include="Structural\Memento\Pattern\Memento.cs" />
+    <Compile Include="Structural\Memento\Pattern\Originator.cs" />
+    <Compile Include="Structural\Observer\Invoke.cs" />
+    <Compile Include="Structural\Observer\Pattern\ConcreteObserver.cs" />
+    <Compile Include="Structural\Observer\Pattern\ConcreteSubject.cs" />
+    <Compile Include="Structural\Observer\Pattern\Observer.cs" />
+    <Compile Include="Structural\Observer\Pattern\Subject.cs" />
+    <Compile Include="Structural\State\Invoke.cs" />
+    <Compile Include="Structural\Strategy\Invoke.cs" />
+    <Compile Include="Structural\Strategy\Pattern\ConcreteStrategyA.cs" />
+    <Compile Include="Structural\Strategy\Pattern\ConcreteStrategyB.cs" />
+    <Compile Include="Structural\Strategy\Pattern\ConcreteStrategyC.cs" />
+    <Compile Include="Structural\Strategy\Pattern\Context.cs" />
+    <Compile Include="Structural\Strategy\Pattern\Strategy.cs" />
+    <Compile Include="Structural\TemplateMethod\Invoke.cs" />
+    <Compile Include="Structural\TemplateMethod\Pattern\AbstractClass.cs" />
+    <Compile Include="Structural\TemplateMethod\Pattern\ConcreteClassA.cs" />
+    <Compile Include="Structural\TemplateMethod\Pattern\ConcreteClassB.cs" />
+    <Compile Include="Structural\Visitor\Invoke.cs" />
+    <Compile Include="Structural\Visitor\Pattern\ConcreteElementA.cs" />
+    <Compile Include="Structural\Visitor\Pattern\ConcreteElementB.cs" />
+    <Compile Include="Structural\Visitor\Pattern\ConcreteVisitor1.cs" />
+    <Compile Include="Structural\Visitor\Pattern\ConcreteVisitor2.cs" />
+    <Compile Include="Structural\Visitor\Pattern\Element.cs" />
+    <Compile Include="Structural\Visitor\Pattern\ObjectStructure.cs" />
+    <Compile Include="Structural\Visitor\Pattern\Visitor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Structural\Interpreter\Example\" />
+    <Folder Include="Structural\Iterator\Example\" />
+    <Folder Include="Structural\Mediator\Example\" />
+    <Folder Include="Structural\Memento\Example\" />
+    <Folder Include="Structural\Observer\Example\" />
+    <Folder Include="Structural\State\Example\" />
+    <Folder Include="Structural\State\Pattern\" />
+    <Folder Include="Structural\Strategy\Example\" />
+    <Folder Include="Structural\TemplateMethod\Example\" />
+    <Folder Include="Structural\Visitor\Example\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
